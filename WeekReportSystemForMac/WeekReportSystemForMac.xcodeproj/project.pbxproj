@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A71763BE17782C0000594863 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71763BD17782C0000594863 /* Cocoa.framework */; };
+		A71763C817782C0000594863 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A71763C617782C0000594863 /* InfoPlist.strings */; };
+		A71763CA17782C0000594863 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A71763C917782C0000594863 /* main.m */; };
+		A71763CE17782C0000594863 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A71763CC17782C0000594863 /* Credits.rtf */; };
+		A71763D117782C0000594863 /* FSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A71763D017782C0000594863 /* FSAppDelegate.m */; };
+		A71763D417782C0000594863 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A71763D217782C0000594863 /* MainMenu.xib */; };
+		A71763DC17782C0000594863 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71763DB17782C0000594863 /* SenTestingKit.framework */; };
+		A71763DD17782C0000594863 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71763BD17782C0000594863 /* Cocoa.framework */; };
+		A71763E517782C0000594863 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A71763E317782C0000594863 /* InfoPlist.strings */; };
+		A71763E817782C0000594863 /* WeekReportSystemForMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A71763E717782C0000594863 /* WeekReportSystemForMacTests.m */; };
+		A71E1A1417783A7200CB4769 /* libLogicForMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A71E1A1117783A6500CB4769 /* libLogicForMac.a */; };
+		A767751717782D450085516D /* project.xml in Resources */ = {isa = PBXBuildFile; fileRef = A767751517782D450085516D /* project.xml */; };
+		A767751817782D450085516D /* project.xml in Resources */ = {isa = PBXBuildFile; fileRef = A767751517782D450085516D /* project.xml */; };
+		A767751917782D450085516D /* WeekReport.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = A767751617782D450085516D /* WeekReport.sqlite */; };
+		A767751A17782D450085516D /* WeekReport.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = A767751617782D450085516D /* WeekReport.sqlite */; };
+		A767751C17782D7E0085516D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A767751B17782D7E0085516D /* libxml2.dylib */; };
+		A767751E17782D830085516D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A767751D17782D830085516D /* libsqlite3.dylib */; };
+		A767753017782E190085516D /* FSAppSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752017782E190085516D /* FSAppSettingsView.m */; };
+		A767753117782E190085516D /* FSAppSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752017782E190085516D /* FSAppSettingsView.m */; };
+		A767753217782E190085516D /* FSDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752217782E190085516D /* FSDatePickerViewController.m */; };
+		A767753317782E190085516D /* FSDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752217782E190085516D /* FSDatePickerViewController.m */; };
+		A767753417782E190085516D /* FSDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A767752317782E190085516D /* FSDatePickerViewController.xib */; };
+		A767753517782E190085516D /* FSDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A767752317782E190085516D /* FSDatePickerViewController.xib */; };
+		A767753617782E190085516D /* FSMainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752517782E190085516D /* FSMainWindow.m */; };
+		A767753717782E190085516D /* FSMainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752517782E190085516D /* FSMainWindow.m */; };
+		A767753817782E190085516D /* FSMyProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752717782E190085516D /* FSMyProfileView.m */; };
+		A767753917782E190085516D /* FSMyProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752717782E190085516D /* FSMyProfileView.m */; };
+		A767753A17782E190085516D /* FSMyProjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752917782E190085516D /* FSMyProjectView.m */; };
+		A767753B17782E190085516D /* FSMyProjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752917782E190085516D /* FSMyProjectView.m */; };
+		A767753C17782E190085516D /* FSMyWeekReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752B17782E190085516D /* FSMyWeekReportView.m */; };
+		A767753D17782E190085516D /* FSMyWeekReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752B17782E190085516D /* FSMyWeekReportView.m */; };
+		A767754017782E190085516D /* FSRequirementsManagementView.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752F17782E190085516D /* FSRequirementsManagementView.m */; };
+		A767754117782E190085516D /* FSRequirementsManagementView.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752F17782E190085516D /* FSRequirementsManagementView.m */; };
+		A7ACBCE7178E63CF00CCC990 /* logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = A7ACBCE6178E63CF00CCC990 /* logo.icns */; };
+		A7F3B6A5177D28D00010EC90 /* AutoCleanMemory.app in Resources */ = {isa = PBXBuildFile; fileRef = A7F3B6A4177D28D00010EC90 /* AutoCleanMemory.app */; };
+		A7F3B6AC177D2E320010EC90 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F3B6AB177D2E320010EC90 /* ServiceManagement.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A71763DE17782C0000594863 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71763B217782BFF00594863 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71763B917782C0000594863;
+			remoteInfo = WeekReportSystemForMac;
+		};
+		A71E1A1017783A6500CB4769 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71E1A0B17783A6400CB4769 /* BusinessLogic.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A767758F1778319E0085516D;
+			remoteInfo = LogicForMac;
+		};
+		A71E1A1217783A6500CB4769 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71E1A0B17783A6400CB4769 /* BusinessLogic.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A76775A7177831AB0085516D;
+			remoteInfo = LogicForiOS;
+		};
+		A71E1A1517783A7800CB4769 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71E1A0B17783A6400CB4769 /* BusinessLogic.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A767758E1778319E0085516D;
+			remoteInfo = LogicForMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A71763BA17782C0000594863 /* 四方精创周报系统.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "四方精创周报系统.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71763BD17782C0000594863 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A71763C017782C0000594863 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A71763C117782C0000594863 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A71763C217782C0000594863 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A71763C517782C0000594863 /* WeekReportSystemForMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeekReportSystemForMac-Info.plist"; sourceTree = "<group>"; };
+		A71763C917782C0000594863 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A71763CB17782C0000594863 /* WeekReportSystemForMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeekReportSystemForMac-Prefix.pch"; sourceTree = "<group>"; };
+		A71763CF17782C0000594863 /* FSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSAppDelegate.h; sourceTree = "<group>"; };
+		A71763D017782C0000594863 /* FSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAppDelegate.m; sourceTree = "<group>"; };
+		A71763DA17782C0000594863 /* WeekReportSystemForMacTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeekReportSystemForMacTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71763DB17782C0000594863 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A71763E217782C0000594863 /* WeekReportSystemForMacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeekReportSystemForMacTests-Info.plist"; sourceTree = "<group>"; };
+		A71763E617782C0000594863 /* WeekReportSystemForMacTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeekReportSystemForMacTests.h; sourceTree = "<group>"; };
+		A71763E717782C0000594863 /* WeekReportSystemForMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeekReportSystemForMacTests.m; sourceTree = "<group>"; };
+		A71E1A0B17783A6400CB4769 /* BusinessLogic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BusinessLogic.xcodeproj; path = ../BusinessLogic/BusinessLogic.xcodeproj; sourceTree = "<group>"; };
+		A767751517782D450085516D /* project.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = project.xml; path = ../../CommonResources/project.xml; sourceTree = "<group>"; };
+		A767751617782D450085516D /* WeekReport.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = WeekReport.sqlite; path = ../../CommonResources/WeekReport.sqlite; sourceTree = "<group>"; };
+		A767751B17782D7E0085516D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		A767751D17782D830085516D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A767751F17782E190085516D /* FSAppSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAppSettingsView.h; sourceTree = "<group>"; };
+		A767752017782E190085516D /* FSAppSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAppSettingsView.m; sourceTree = "<group>"; };
+		A767752117782E190085516D /* FSDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSDatePickerViewController.h; sourceTree = "<group>"; };
+		A767752217782E190085516D /* FSDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSDatePickerViewController.m; sourceTree = "<group>"; };
+		A767752317782E190085516D /* FSDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSDatePickerViewController.xib; sourceTree = "<group>"; };
+		A767752417782E190085516D /* FSMainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMainWindow.h; sourceTree = "<group>"; };
+		A767752517782E190085516D /* FSMainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMainWindow.m; sourceTree = "<group>"; };
+		A767752617782E190085516D /* FSMyProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMyProfileView.h; sourceTree = "<group>"; };
+		A767752717782E190085516D /* FSMyProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMyProfileView.m; sourceTree = "<group>"; };
+		A767752817782E190085516D /* FSMyProjectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMyProjectView.h; sourceTree = "<group>"; };
+		A767752917782E190085516D /* FSMyProjectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMyProjectView.m; sourceTree = "<group>"; };
+		A767752A17782E190085516D /* FSMyWeekReportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMyWeekReportView.h; sourceTree = "<group>"; };
+		A767752B17782E190085516D /* FSMyWeekReportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMyWeekReportView.m; sourceTree = "<group>"; };
+		A767752E17782E190085516D /* FSRequirementsManagementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRequirementsManagementView.h; sourceTree = "<group>"; };
+		A767752F17782E190085516D /* FSRequirementsManagementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRequirementsManagementView.m; sourceTree = "<group>"; };
+		A7756310177D1E0F002BB17E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		A7756311177D1E10002BB17E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A7756312177D1E11002BB17E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "zh-Hans"; path = "zh-Hans.lproj/Credits.rtf"; sourceTree = "<group>"; };
+		A7756313177D1E12002BB17E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A7ACBCE6178E63CF00CCC990 /* logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = logo.icns; sourceTree = "<group>"; };
+		A7F3B6A4177D28D00010EC90 /* AutoCleanMemory.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = AutoCleanMemory.app; path = ../../CommonResources/AutoCleanMemory.app; sourceTree = "<group>"; };
+		A7F3B6AB177D2E320010EC90 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A71763B717782C0000594863 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F3B6AC177D2E320010EC90 /* ServiceManagement.framework in Frameworks */,
+				A71E1A1417783A7200CB4769 /* libLogicForMac.a in Frameworks */,
+				A767751E17782D830085516D /* libsqlite3.dylib in Frameworks */,
+				A767751C17782D7E0085516D /* libxml2.dylib in Frameworks */,
+				A71763BE17782C0000594863 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71763D617782C0000594863 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71763DC17782C0000594863 /* SenTestingKit.framework in Frameworks */,
+				A71763DD17782C0000594863 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A71763B117782BFF00594863 = {
+			isa = PBXGroup;
+			children = (
+				A71763C317782C0000594863 /* WeekReportSystemForMac */,
+				A71763E017782C0000594863 /* WeekReportSystemForMacTests */,
+				A71763BC17782C0000594863 /* Frameworks */,
+				A71763BB17782C0000594863 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A71763BB17782C0000594863 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A71763BA17782C0000594863 /* 四方精创周报系统.app */,
+				A71763DA17782C0000594863 /* WeekReportSystemForMacTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A71763BC17782C0000594863 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A71E1A0B17783A6400CB4769 /* BusinessLogic.xcodeproj */,
+				A767751D17782D830085516D /* libsqlite3.dylib */,
+				A767751B17782D7E0085516D /* libxml2.dylib */,
+				A7F3B6AB177D2E320010EC90 /* ServiceManagement.framework */,
+				A71763BD17782C0000594863 /* Cocoa.framework */,
+				A71763DB17782C0000594863 /* SenTestingKit.framework */,
+				A71763BF17782C0000594863 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A71763BF17782C0000594863 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A71763C017782C0000594863 /* AppKit.framework */,
+				A71763C117782C0000594863 /* CoreData.framework */,
+				A71763C217782C0000594863 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A71763C317782C0000594863 /* WeekReportSystemForMac */ = {
+			isa = PBXGroup;
+			children = (
+				A71763CF17782C0000594863 /* FSAppDelegate.h */,
+				A71763D017782C0000594863 /* FSAppDelegate.m */,
+				A71763D217782C0000594863 /* MainMenu.xib */,
+				A767751F17782E190085516D /* FSAppSettingsView.h */,
+				A767752017782E190085516D /* FSAppSettingsView.m */,
+				A767752417782E190085516D /* FSMainWindow.h */,
+				A767752517782E190085516D /* FSMainWindow.m */,
+				A767752617782E190085516D /* FSMyProfileView.h */,
+				A767752717782E190085516D /* FSMyProfileView.m */,
+				A767752817782E190085516D /* FSMyProjectView.h */,
+				A767752917782E190085516D /* FSMyProjectView.m */,
+				A767752A17782E190085516D /* FSMyWeekReportView.h */,
+				A767752B17782E190085516D /* FSMyWeekReportView.m */,
+				A767752E17782E190085516D /* FSRequirementsManagementView.h */,
+				A767752F17782E190085516D /* FSRequirementsManagementView.m */,
+				A767754317782E4E0085516D /* Common Resource */,
+				A767754217782E2A0085516D /* Custom Controls */,
+				A71763C417782C0000594863 /* Supporting Files */,
+			);
+			path = WeekReportSystemForMac;
+			sourceTree = "<group>";
+		};
+		A71763C417782C0000594863 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7ACBCE6178E63CF00CCC990 /* logo.icns */,
+				A71763C517782C0000594863 /* WeekReportSystemForMac-Info.plist */,
+				A71763C617782C0000594863 /* InfoPlist.strings */,
+				A71763C917782C0000594863 /* main.m */,
+				A71763CB17782C0000594863 /* WeekReportSystemForMac-Prefix.pch */,
+				A71763CC17782C0000594863 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A71763E017782C0000594863 /* WeekReportSystemForMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				A71763E617782C0000594863 /* WeekReportSystemForMacTests.h */,
+				A71763E717782C0000594863 /* WeekReportSystemForMacTests.m */,
+				A71763E117782C0000594863 /* Supporting Files */,
+			);
+			path = WeekReportSystemForMacTests;
+			sourceTree = "<group>";
+		};
+		A71763E117782C0000594863 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A71763E217782C0000594863 /* WeekReportSystemForMacTests-Info.plist */,
+				A71763E317782C0000594863 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A71E1A0C17783A6400CB4769 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A71E1A1117783A6500CB4769 /* libLogicForMac.a */,
+				A71E1A1317783A6500CB4769 /* libLogicForiOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A767754217782E2A0085516D /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				A767752117782E190085516D /* FSDatePickerViewController.h */,
+				A767752217782E190085516D /* FSDatePickerViewController.m */,
+				A767752317782E190085516D /* FSDatePickerViewController.xib */,
+			);
+			name = "Custom Controls";
+			sourceTree = "<group>";
+		};
+		A767754317782E4E0085516D /* Common Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A7F3B6A4177D28D00010EC90 /* AutoCleanMemory.app */,
+				A767751517782D450085516D /* project.xml */,
+				A767751617782D450085516D /* WeekReport.sqlite */,
+			);
+			name = "Common Resource";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A71763B917782C0000594863 /* WeekReportSystemForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71763EB17782C0000594863 /* Build configuration list for PBXNativeTarget "WeekReportSystemForMac" */;
+			buildPhases = (
+				A71763B617782C0000594863 /* Sources */,
+				A71763B717782C0000594863 /* Frameworks */,
+				A71763B817782C0000594863 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A71E1A1617783A7800CB4769 /* PBXTargetDependency */,
+			);
+			name = WeekReportSystemForMac;
+			productName = WeekReportSystemForMac;
+			productReference = A71763BA17782C0000594863 /* 四方精创周报系统.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A71763D917782C0000594863 /* WeekReportSystemForMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71763EE17782C0000594863 /* Build configuration list for PBXNativeTarget "WeekReportSystemForMacTests" */;
+			buildPhases = (
+				A71763D517782C0000594863 /* Sources */,
+				A71763D617782C0000594863 /* Frameworks */,
+				A71763D717782C0000594863 /* Resources */,
+				A71763D817782C0000594863 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A71763DF17782C0000594863 /* PBXTargetDependency */,
+			);
+			name = WeekReportSystemForMacTests;
+			productName = WeekReportSystemForMacTests;
+			productReference = A71763DA17782C0000594863 /* WeekReportSystemForMacTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A71763B217782BFF00594863 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = FormsSyntron;
+			};
+			buildConfigurationList = A71763B517782BFF00594863 /* Build configuration list for PBXProject "WeekReportSystemForMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = A71763B117782BFF00594863;
+			productRefGroup = A71763BB17782C0000594863 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A71E1A0C17783A6400CB4769 /* Products */;
+					ProjectRef = A71E1A0B17783A6400CB4769 /* BusinessLogic.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A71763B917782C0000594863 /* WeekReportSystemForMac */,
+				A71763D917782C0000594863 /* WeekReportSystemForMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A71E1A1117783A6500CB4769 /* libLogicForMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLogicForMac.a;
+			remoteRef = A71E1A1017783A6500CB4769 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A71E1A1317783A6500CB4769 /* libLogicForiOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLogicForiOS.a;
+			remoteRef = A71E1A1217783A6500CB4769 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A71763B817782C0000594863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71763C817782C0000594863 /* InfoPlist.strings in Resources */,
+				A71763CE17782C0000594863 /* Credits.rtf in Resources */,
+				A71763D417782C0000594863 /* MainMenu.xib in Resources */,
+				A767751717782D450085516D /* project.xml in Resources */,
+				A767751917782D450085516D /* WeekReport.sqlite in Resources */,
+				A767753417782E190085516D /* FSDatePickerViewController.xib in Resources */,
+				A7F3B6A5177D28D00010EC90 /* AutoCleanMemory.app in Resources */,
+				A7ACBCE7178E63CF00CCC990 /* logo.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71763D717782C0000594863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71763E517782C0000594863 /* InfoPlist.strings in Resources */,
+				A767751817782D450085516D /* project.xml in Resources */,
+				A767751A17782D450085516D /* WeekReport.sqlite in Resources */,
+				A767753517782E190085516D /* FSDatePickerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A71763D817782C0000594863 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A71763B617782C0000594863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71763CA17782C0000594863 /* main.m in Sources */,
+				A71763D117782C0000594863 /* FSAppDelegate.m in Sources */,
+				A767753017782E190085516D /* FSAppSettingsView.m in Sources */,
+				A767753217782E190085516D /* FSDatePickerViewController.m in Sources */,
+				A767753617782E190085516D /* FSMainWindow.m in Sources */,
+				A767753817782E190085516D /* FSMyProfileView.m in Sources */,
+				A767753A17782E190085516D /* FSMyProjectView.m in Sources */,
+				A767753C17782E190085516D /* FSMyWeekReportView.m in Sources */,
+				A767754017782E190085516D /* FSRequirementsManagementView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71763D517782C0000594863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71763E817782C0000594863 /* WeekReportSystemForMacTests.m in Sources */,
+				A767753117782E190085516D /* FSAppSettingsView.m in Sources */,
+				A767753317782E190085516D /* FSDatePickerViewController.m in Sources */,
+				A767753717782E190085516D /* FSMainWindow.m in Sources */,
+				A767753917782E190085516D /* FSMyProfileView.m in Sources */,
+				A767753B17782E190085516D /* FSMyProjectView.m in Sources */,
+				A767753D17782E190085516D /* FSMyWeekReportView.m in Sources */,
+				A767754117782E190085516D /* FSRequirementsManagementView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A71763DF17782C0000594863 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71763B917782C0000594863 /* WeekReportSystemForMac */;
+			targetProxy = A71763DE17782C0000594863 /* PBXContainerItemProxy */;
+		};
+		A71E1A1617783A7800CB4769 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LogicForMac;
+			targetProxy = A71E1A1517783A7800CB4769 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A71763C617782C0000594863 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7756311177D1E10002BB17E /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A71763CC17782C0000594863 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7756312177D1E11002BB17E /* zh-Hans */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A71763D217782C0000594863 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7756310177D1E0F002BB17E /* zh-Hans */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A71763E317782C0000594863 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7756313177D1E12002BB17E /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A71763E917782C0000594863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../BusinessLogic/**",
+					"/usr/include/libxml2/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = macosx10.8;
+			};
+			name = Debug;
+		};
+		A71763EA17782C0000594863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../BusinessLogic/**",
+					"/usr/include/libxml2/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-NDEBUG",
+				);
+				SDKROOT = macosx10.8;
+			};
+			name = Release;
+		};
+		A71763EC17782C0000594863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeekReportSystemForMac/WeekReportSystemForMac-Prefix.pch";
+				INFOPLIST_FILE = "WeekReportSystemForMac/WeekReportSystemForMac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "四方精创周报系统";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A71763ED17782C0000594863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeekReportSystemForMac/WeekReportSystemForMac-Prefix.pch";
+				INFOPLIST_FILE = "WeekReportSystemForMac/WeekReportSystemForMac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "四方精创周报系统";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A71763EF17782C0000594863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WeekReportSystemForMac.app/Contents/MacOS/WeekReportSystemForMac";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeekReportSystemForMac/WeekReportSystemForMac-Prefix.pch";
+				INFOPLIST_FILE = "WeekReportSystemForMacTests/WeekReportSystemForMacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A71763F017782C0000594863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WeekReportSystemForMac.app/Contents/MacOS/WeekReportSystemForMac";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeekReportSystemForMac/WeekReportSystemForMac-Prefix.pch";
+				INFOPLIST_FILE = "WeekReportSystemForMacTests/WeekReportSystemForMacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A71763B517782BFF00594863 /* Build configuration list for PBXProject "WeekReportSystemForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71763E917782C0000594863 /* Debug */,
+				A71763EA17782C0000594863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71763EB17782C0000594863 /* Build configuration list for PBXNativeTarget "WeekReportSystemForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71763EC17782C0000594863 /* Debug */,
+				A71763ED17782C0000594863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71763EE17782C0000594863 /* Build configuration list for PBXNativeTarget "WeekReportSystemForMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71763EF17782C0000594863 /* Debug */,
+				A71763F017782C0000594863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A71763B217782BFF00594863 /* Project object */;
+}

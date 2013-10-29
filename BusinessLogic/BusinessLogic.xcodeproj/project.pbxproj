@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A76775931778319E0085516D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76775921778319E0085516D /* Cocoa.framework */; };
+		A767759D1778319E0085516D /* LogicForMac.m in Sources */ = {isa = PBXBuildFile; fileRef = A767759C1778319E0085516D /* LogicForMac.m */; };
+		A76775A9177831AB0085516D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76775A8177831AB0085516D /* Foundation.framework */; };
+		A76775AE177831AB0085516D /* LogicForiOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A76775AD177831AB0085516D /* LogicForiOS.h */; };
+		A76775B0177831AB0085516D /* LogicForiOS.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775AF177831AB0085516D /* LogicForiOS.m */; };
+		A76775C1177833280085516D /* NSAlert+Error.h in Headers */ = {isa = PBXBuildFile; fileRef = A76775BF177833280085516D /* NSAlert+Error.h */; };
+		A76775C2177833280085516D /* NSAlert+Error.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775C0177833280085516D /* NSAlert+Error.m */; };
+		A76775D21778333E0085516D /* CommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = A76775C31778333E0085516D /* CommonFunctions.h */; };
+		A76775D31778333E0085516D /* CommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775C41778333E0085516D /* CommonFunctions.m */; };
+		A76775D41778333E0085516D /* CommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775C41778333E0085516D /* CommonFunctions.m */; };
+		A76775D51778333E0085516D /* ErrorCode.h in Headers */ = {isa = PBXBuildFile; fileRef = A76775C51778333E0085516D /* ErrorCode.h */; };
+		A76775D61778333E0085516D /* FSMainLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = A76775C61778333E0085516D /* FSMainLogic.h */; };
+		A76775D71778333E0085516D /* FSMainLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775C71778333E0085516D /* FSMainLogic.m */; };
+		A76775D81778333E0085516D /* FSMainLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775C71778333E0085516D /* FSMainLogic.m */; };
+		A76775D91778333E0085516D /* FSProjectInfoObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A76775C81778333E0085516D /* FSProjectInfoObject.h */; };
+		A76775DA1778333E0085516D /* FSProjectInfoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775C91778333E0085516D /* FSProjectInfoObject.m */; };
+		A76775DB1778333E0085516D /* FSProjectInfoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775C91778333E0085516D /* FSProjectInfoObject.m */; };
+		A76775DC1778333E0085516D /* FSRequirementObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A76775CA1778333E0085516D /* FSRequirementObject.h */; };
+		A76775DD1778333E0085516D /* FSRequirementObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775CB1778333E0085516D /* FSRequirementObject.m */; };
+		A76775DE1778333E0085516D /* FSRequirementObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775CB1778333E0085516D /* FSRequirementObject.m */; };
+		A76775DF1778333E0085516D /* FSWeekReportObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A76775CC1778333E0085516D /* FSWeekReportObject.h */; };
+		A76775E01778333E0085516D /* FSWeekReportObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775CD1778333E0085516D /* FSWeekReportObject.m */; };
+		A76775E11778333E0085516D /* FSWeekReportObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775CD1778333E0085516D /* FSWeekReportObject.m */; };
+		A76775E21778333E0085516D /* FSWeekSummaryObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A76775CE1778333E0085516D /* FSWeekSummaryObject.h */; };
+		A76775E31778333E0085516D /* FSWeekSummaryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775CF1778333E0085516D /* FSWeekSummaryObject.m */; };
+		A76775E41778333E0085516D /* FSWeekSummaryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775CF1778333E0085516D /* FSWeekSummaryObject.m */; };
+		A76775E51778333E0085516D /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = A76775D01778333E0085516D /* GDataXMLNode.h */; };
+		A76775E61778333E0085516D /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775D11778333E0085516D /* GDataXMLNode.m */; };
+		A76775E71778333E0085516D /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A76775D11778333E0085516D /* GDataXMLNode.m */; };
+		A791979F178BB3060054E5E8 /* FSSendReportHTTP.h in Headers */ = {isa = PBXBuildFile; fileRef = A791979D178BB3060054E5E8 /* FSSendReportHTTP.h */; };
+		A79197A0178BB3060054E5E8 /* FSSendReportHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = A791979E178BB3060054E5E8 /* FSSendReportHTTP.m */; };
+		A79197A1178BB3060054E5E8 /* FSSendReportHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = A791979E178BB3060054E5E8 /* FSSendReportHTTP.m */; };
+		A7B661FB177D3D39008F8526 /* LaunchAtLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B661F9177D3D39008F8526 /* LaunchAtLoginController.h */; };
+		A7B661FC177D3D39008F8526 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B661FA177D3D39008F8526 /* LaunchAtLoginController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A76775A5177831AB0085516D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				A76775AE177831AB0085516D /* LogicForiOS.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A767758F1778319E0085516D /* libLogicForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLogicForMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76775921778319E0085516D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A76775951778319E0085516D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A76775961778319E0085516D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A76775971778319E0085516D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A767759A1778319E0085516D /* LogicForMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogicForMac-Prefix.pch"; sourceTree = "<group>"; };
+		A767759B1778319E0085516D /* LogicForMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogicForMac.h; sourceTree = "<group>"; };
+		A767759C1778319E0085516D /* LogicForMac.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogicForMac.m; sourceTree = "<group>"; };
+		A76775A7177831AB0085516D /* libLogicForiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLogicForiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76775A8177831AB0085516D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A76775AC177831AB0085516D /* LogicForiOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogicForiOS-Prefix.pch"; sourceTree = "<group>"; };
+		A76775AD177831AB0085516D /* LogicForiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogicForiOS.h; sourceTree = "<group>"; };
+		A76775AF177831AB0085516D /* LogicForiOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogicForiOS.m; sourceTree = "<group>"; };
+		A76775BF177833280085516D /* NSAlert+Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+Error.h"; sourceTree = "<group>"; };
+		A76775C0177833280085516D /* NSAlert+Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+Error.m"; sourceTree = "<group>"; };
+		A76775C31778333E0085516D /* CommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonFunctions.h; path = Common/CommonFunctions.h; sourceTree = "<group>"; };
+		A76775C41778333E0085516D /* CommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonFunctions.m; path = Common/CommonFunctions.m; sourceTree = "<group>"; };
+		A76775C51778333E0085516D /* ErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ErrorCode.h; path = Common/ErrorCode.h; sourceTree = "<group>"; };
+		A76775C61778333E0085516D /* FSMainLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSMainLogic.h; path = Common/FSMainLogic.h; sourceTree = "<group>"; };
+		A76775C71778333E0085516D /* FSMainLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSMainLogic.m; path = Common/FSMainLogic.m; sourceTree = "<group>"; };
+		A76775C81778333E0085516D /* FSProjectInfoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSProjectInfoObject.h; path = Common/FSProjectInfoObject.h; sourceTree = "<group>"; };
+		A76775C91778333E0085516D /* FSProjectInfoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSProjectInfoObject.m; path = Common/FSProjectInfoObject.m; sourceTree = "<group>"; };
+		A76775CA1778333E0085516D /* FSRequirementObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSRequirementObject.h; path = Common/FSRequirementObject.h; sourceTree = "<group>"; };
+		A76775CB1778333E0085516D /* FSRequirementObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSRequirementObject.m; path = Common/FSRequirementObject.m; sourceTree = "<group>"; };
+		A76775CC1778333E0085516D /* FSWeekReportObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSWeekReportObject.h; path = Common/FSWeekReportObject.h; sourceTree = "<group>"; };
+		A76775CD1778333E0085516D /* FSWeekReportObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSWeekReportObject.m; path = Common/FSWeekReportObject.m; sourceTree = "<group>"; };
+		A76775CE1778333E0085516D /* FSWeekSummaryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSWeekSummaryObject.h; path = Common/FSWeekSummaryObject.h; sourceTree = "<group>"; };
+		A76775CF1778333E0085516D /* FSWeekSummaryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSWeekSummaryObject.m; path = Common/FSWeekSummaryObject.m; sourceTree = "<group>"; };
+		A76775D01778333E0085516D /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDataXMLNode.h; path = Common/GDataXMLNode.h; sourceTree = "<group>"; };
+		A76775D11778333E0085516D /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDataXMLNode.m; path = Common/GDataXMLNode.m; sourceTree = "<group>"; };
+		A791979D178BB3060054E5E8 /* FSSendReportHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSSendReportHTTP.h; path = Common/FSSendReportHTTP.h; sourceTree = "<group>"; };
+		A791979E178BB3060054E5E8 /* FSSendReportHTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSSendReportHTTP.m; path = Common/FSSendReportHTTP.m; sourceTree = "<group>"; };
+		A7B661F9177D3D39008F8526 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
+		A7B661FA177D3D39008F8526 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A767758C1778319E0085516D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76775931778319E0085516D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76775A4177831AB0085516D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76775A9177831AB0085516D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A76775861778319E0085516D = {
+			isa = PBXGroup;
+			children = (
+				A76775B5177831CD0085516D /* Custom Objects */,
+				A76775B4177831B20085516D /* Common */,
+				A76775981778319E0085516D /* LogicForMac */,
+				A76775AA177831AB0085516D /* LogicForiOS */,
+				A76775911778319E0085516D /* Frameworks */,
+				A76775901778319E0085516D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A76775901778319E0085516D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A767758F1778319E0085516D /* libLogicForMac.a */,
+				A76775A7177831AB0085516D /* libLogicForiOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A76775911778319E0085516D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A76775921778319E0085516D /* Cocoa.framework */,
+				A76775A8177831AB0085516D /* Foundation.framework */,
+				A76775941778319E0085516D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A76775941778319E0085516D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A76775951778319E0085516D /* AppKit.framework */,
+				A76775961778319E0085516D /* CoreData.framework */,
+				A76775971778319E0085516D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A76775981778319E0085516D /* LogicForMac */ = {
+			isa = PBXGroup;
+			children = (
+				A76775BF177833280085516D /* NSAlert+Error.h */,
+				A76775C0177833280085516D /* NSAlert+Error.m */,
+				A767759B1778319E0085516D /* LogicForMac.h */,
+				A767759C1778319E0085516D /* LogicForMac.m */,
+				A7B661F9177D3D39008F8526 /* LaunchAtLoginController.h */,
+				A7B661FA177D3D39008F8526 /* LaunchAtLoginController.m */,
+				A76775991778319E0085516D /* Supporting Files */,
+			);
+			path = LogicForMac;
+			sourceTree = "<group>";
+		};
+		A76775991778319E0085516D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A767759A1778319E0085516D /* LogicForMac-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A76775AA177831AB0085516D /* LogicForiOS */ = {
+			isa = PBXGroup;
+			children = (
+				A76775AD177831AB0085516D /* LogicForiOS.h */,
+				A76775AF177831AB0085516D /* LogicForiOS.m */,
+				A76775AB177831AB0085516D /* Supporting Files */,
+			);
+			path = LogicForiOS;
+			sourceTree = "<group>";
+		};
+		A76775AB177831AB0085516D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A76775AC177831AB0085516D /* LogicForiOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A76775B4177831B20085516D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A76775C31778333E0085516D /* CommonFunctions.h */,
+				A76775C41778333E0085516D /* CommonFunctions.m */,
+				A791979D178BB3060054E5E8 /* FSSendReportHTTP.h */,
+				A791979E178BB3060054E5E8 /* FSSendReportHTTP.m */,
+				A76775C51778333E0085516D /* ErrorCode.h */,
+				A76775C61778333E0085516D /* FSMainLogic.h */,
+				A76775C71778333E0085516D /* FSMainLogic.m */,
+				A76775D01778333E0085516D /* GDataXMLNode.h */,
+				A76775D11778333E0085516D /* GDataXMLNode.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		A76775B5177831CD0085516D /* Custom Objects */ = {
+			isa = PBXGroup;
+			children = (
+				A76775C81778333E0085516D /* FSProjectInfoObject.h */,
+				A76775C91778333E0085516D /* FSProjectInfoObject.m */,
+				A76775CA1778333E0085516D /* FSRequirementObject.h */,
+				A76775CB1778333E0085516D /* FSRequirementObject.m */,
+				A76775CC1778333E0085516D /* FSWeekReportObject.h */,
+				A76775CD1778333E0085516D /* FSWeekReportObject.m */,
+				A76775CE1778333E0085516D /* FSWeekSummaryObject.h */,
+				A76775CF1778333E0085516D /* FSWeekSummaryObject.m */,
+			);
+			name = "Custom Objects";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A767758D1778319E0085516D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76775C1177833280085516D /* NSAlert+Error.h in Headers */,
+				A76775D21778333E0085516D /* CommonFunctions.h in Headers */,
+				A76775D51778333E0085516D /* ErrorCode.h in Headers */,
+				A76775D61778333E0085516D /* FSMainLogic.h in Headers */,
+				A76775D91778333E0085516D /* FSProjectInfoObject.h in Headers */,
+				A76775DC1778333E0085516D /* FSRequirementObject.h in Headers */,
+				A76775DF1778333E0085516D /* FSWeekReportObject.h in Headers */,
+				A76775E21778333E0085516D /* FSWeekSummaryObject.h in Headers */,
+				A76775E51778333E0085516D /* GDataXMLNode.h in Headers */,
+				A7B661FB177D3D39008F8526 /* LaunchAtLoginController.h in Headers */,
+				A791979F178BB3060054E5E8 /* FSSendReportHTTP.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A767758E1778319E0085516D /* LogicForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76775A01778319E0085516D /* Build configuration list for PBXNativeTarget "LogicForMac" */;
+			buildPhases = (
+				A767758B1778319E0085516D /* Sources */,
+				A767758C1778319E0085516D /* Frameworks */,
+				A767758D1778319E0085516D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogicForMac;
+			productName = LogicForMac;
+			productReference = A767758F1778319E0085516D /* libLogicForMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A76775A6177831AB0085516D /* LogicForiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76775B1177831AB0085516D /* Build configuration list for PBXNativeTarget "LogicForiOS" */;
+			buildPhases = (
+				A76775A3177831AB0085516D /* Sources */,
+				A76775A4177831AB0085516D /* Frameworks */,
+				A76775A5177831AB0085516D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogicForiOS;
+			productName = LogicForiOS;
+			productReference = A76775A7177831AB0085516D /* libLogicForiOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A76775871778319E0085516D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = FormsSyntron;
+			};
+			buildConfigurationList = A767758A1778319E0085516D /* Build configuration list for PBXProject "BusinessLogic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A76775861778319E0085516D;
+			productRefGroup = A76775901778319E0085516D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A767758E1778319E0085516D /* LogicForMac */,
+				A76775A6177831AB0085516D /* LogicForiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A767758B1778319E0085516D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A767759D1778319E0085516D /* LogicForMac.m in Sources */,
+				A76775C2177833280085516D /* NSAlert+Error.m in Sources */,
+				A76775D31778333E0085516D /* CommonFunctions.m in Sources */,
+				A76775D71778333E0085516D /* FSMainLogic.m in Sources */,
+				A76775DA1778333E0085516D /* FSProjectInfoObject.m in Sources */,
+				A76775DD1778333E0085516D /* FSRequirementObject.m in Sources */,
+				A76775E01778333E0085516D /* FSWeekReportObject.m in Sources */,
+				A76775E31778333E0085516D /* FSWeekSummaryObject.m in Sources */,
+				A76775E61778333E0085516D /* GDataXMLNode.m in Sources */,
+				A7B661FC177D3D39008F8526 /* LaunchAtLoginController.m in Sources */,
+				A79197A0178BB3060054E5E8 /* FSSendReportHTTP.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76775A3177831AB0085516D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76775B0177831AB0085516D /* LogicForiOS.m in Sources */,
+				A76775D41778333E0085516D /* CommonFunctions.m in Sources */,
+				A76775D81778333E0085516D /* FSMainLogic.m in Sources */,
+				A76775DB1778333E0085516D /* FSProjectInfoObject.m in Sources */,
+				A76775DE1778333E0085516D /* FSRequirementObject.m in Sources */,
+				A76775E11778333E0085516D /* FSWeekReportObject.m in Sources */,
+				A76775E41778333E0085516D /* FSWeekSummaryObject.m in Sources */,
+				A76775E71778333E0085516D /* GDataXMLNode.m in Sources */,
+				A79197A1178BB3060054E5E8 /* FSSendReportHTTP.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A767759E1778319E0085516D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A767759F1778319E0085516D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A76775A11778319E0085516D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogicForMac/LogicForMac-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A76775A21778319E0085516D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogicForMac/LogicForMac-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A76775B2177831AB0085516D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/LogicForiOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogicForiOS/LogicForiOS-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A76775B3177831AB0085516D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/LogicForiOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogicForiOS/LogicForiOS-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A767758A1778319E0085516D /* Build configuration list for PBXProject "BusinessLogic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A767759E1778319E0085516D /* Debug */,
+				A767759F1778319E0085516D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76775A01778319E0085516D /* Build configuration list for PBXNativeTarget "LogicForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76775A11778319E0085516D /* Debug */,
+				A76775A21778319E0085516D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76775B1177831AB0085516D /* Build configuration list for PBXNativeTarget "LogicForiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76775B2177831AB0085516D /* Debug */,
+				A76775B3177831AB0085516D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A76775871778319E0085516D /* Project object */;
+}
