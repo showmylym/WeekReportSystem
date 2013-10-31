@@ -141,25 +141,28 @@
             if ([NSAlert showErrorMessage:errorText] == 1) {
                 exit(1);
             }
+        } else {
+            //拷贝成功的判断（FileManager的copy方法，是同步方法，但不加此判断块，会造成程序刚启动时能看到界面但无法点击）
+            NSInteger count = 0;
+            NSData * sourceFileData = [NSData dataWithContentsOfFile:sourcePath];
+            NSData * targetFileData;
+            do {
+                targetFileData = [NSData dataWithContentsOfFile:targetPath];
+                if ([sourceFileData length] == [targetFileData length]) {
+                    break;
+                }
+                [[NSRunLoop currentRunLoop] runUntilDate:[[NSDate date] dateByAddingTimeInterval:1]];
+                if (count > 20) {
+                    if ([NSAlert showErrorMessage:@"数据库拷贝超时，程序即将关闭！"] == 1) {
+                        exit(1);
+                    }
+                }
+                count ++;
+            } while (1);
+
         }
+        
     }
-    
-    NSInteger count = 0;
-    NSData * sourceFileData = [NSData dataWithContentsOfFile:sourcePath];
-    NSData * targetFileData;
-    do {
-        targetFileData = [NSData dataWithContentsOfFile:targetPath];
-        if ([sourceFileData length] == [targetFileData length]) {
-            break;
-        }
-        [[NSRunLoop currentRunLoop] runUntilDate:[[NSDate date] dateByAddingTimeInterval:1]];
-        if (count > 20) {
-            if ([NSAlert showErrorMessage:@"数据库拷贝超时，程序即将关闭！"] == 1) {
-                exit(1);
-            }
-        }
-        count ++;
-    } while (1);
     
 }
 
