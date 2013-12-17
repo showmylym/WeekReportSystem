@@ -265,10 +265,13 @@
             NSTextField * normalTimeTextField = (NSTextField *)[cellView4 viewWithTag:ColumnRegularTimeTag];
             NSString * normalTimeString = [normalTimeTextField.cell title];
             weekReport.normalTime = @([normalTimeString doubleValue]);
-            if (needCheck && isEmptyString(normalTimeString)) {
-                [NSAlert showErrorMessage:[NSString stringWithFormat:@"%@的第%d项'常时'为空，请填写！", weekReport.createdDate, weekReport.orderNum.intValue]];
-                canSave = NO;
-                return;
+            if (isEmptyString(normalTimeString)) {
+                [normalTimeTextField.cell setTitle:@"0.0"];
+                if (needCheck) {
+                    [NSAlert showErrorMessage:[NSString stringWithFormat:@"%@的第%d项'常时'为空，将被自动设置为0.0！", weekReport.createdDate, weekReport.orderNum.intValue]];
+                    canSave = NO;
+                    return;
+                }
             }
             normalTimeSum += [normalTimeString doubleValue];
             
@@ -332,15 +335,11 @@
     double wednesdayTime    = 0.0;
     double thurdayTime      = 0.0;
     double fridayTime       = 0.0;
-    double saturdayTime     = 0.0;
-    double sundayTime       = 0.0;
     BOOL needShowMon        = NO;
     BOOL needShowTues       = NO;
     BOOL needShowWednes     = NO;
     BOOL needShowThurs      = NO;
     BOOL needShowFri        = NO;
-    BOOL needShowSatur      = NO;
-    BOOL needShowSun        = NO;
 
     
     for (FSWeekReportObject * weekReportObj in self.weekReportsMuArray) {
@@ -359,12 +358,6 @@
         } else if ([weekReportObj.createdDate rangeOfString:@"五" options:NSBackwardsSearch].location != NSNotFound) {
             fridayTime      += [weekReportObj.normalTime doubleValue];
             needShowFri     = YES;
-        } else if ([weekReportObj.createdDate rangeOfString:@"六" options:NSBackwardsSearch].location != NSNotFound) {
-            saturdayTime    += [weekReportObj.normalTime doubleValue];
-            needShowSatur   = YES;
-        } else if ([weekReportObj.createdDate rangeOfString:@"日" options:NSBackwardsSearch].location != NSNotFound) {
-            sundayTime      += [weekReportObj.normalTime doubleValue];
-            needShowSun     = YES;
         }
     }
     NSMutableString * normalTimeString = [NSMutableString stringWithString:@"不合法常时: "];
@@ -386,14 +379,6 @@
     }
     if (needShowFri && fridayTime != 8.0) {
         [normalTimeString appendFormat:@"周五 (%.1lf)  ", fridayTime];
-        isLegal = NO;
-    }
-    if (needShowSatur && saturdayTime != 8.0) {
-        [normalTimeString appendFormat:@"周六 (%.1lf)  ", saturdayTime];
-        isLegal = NO;
-    }
-    if (needShowSun && sundayTime != 8.0) {
-        [normalTimeString appendFormat:@"周日 (%.1lf)  ", sundayTime];
         isLegal = NO;
     }
     if (isLegal) {
@@ -587,7 +572,7 @@
         return;
     }
     //save
-    BOOL canSave = [self retrieveDataFromTableViewControlsNeedCheckData:YES];
+    BOOL canSave = [self retrieveDataFromTableViewControlsNeedCheckData:NO];
     if (canSave) {
         [self save];
     }
@@ -644,7 +629,7 @@
 }
 
 - (void) needSaveCalledNotification:(NSNotification *)note {
-    BOOL canSave = [self retrieveDataFromTableViewControlsNeedCheckData:YES];
+    BOOL canSave = [self retrieveDataFromTableViewControlsNeedCheckData:NO];
     if (canSave) {
         [self save];
         [NSApp replyToApplicationShouldTerminate:YES];

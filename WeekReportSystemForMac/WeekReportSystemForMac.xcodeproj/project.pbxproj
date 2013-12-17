@@ -18,8 +18,6 @@
 		A71763E517782C0000594863 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A71763E317782C0000594863 /* InfoPlist.strings */; };
 		A71763E817782C0000594863 /* WeekReportSystemForMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A71763E717782C0000594863 /* WeekReportSystemForMacTests.m */; };
 		A71E1A1417783A7200CB4769 /* libLogicForMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A71E1A1117783A6500CB4769 /* libLogicForMac.a */; };
-		A767751717782D450085516D /* project.xml in Resources */ = {isa = PBXBuildFile; fileRef = A767751517782D450085516D /* project.xml */; };
-		A767751817782D450085516D /* project.xml in Resources */ = {isa = PBXBuildFile; fileRef = A767751517782D450085516D /* project.xml */; };
 		A767751917782D450085516D /* WeekReport.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = A767751617782D450085516D /* WeekReport.sqlite */; };
 		A767751A17782D450085516D /* WeekReport.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = A767751617782D450085516D /* WeekReport.sqlite */; };
 		A767751C17782D7E0085516D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A767751B17782D7E0085516D /* libxml2.dylib */; };
@@ -40,6 +38,7 @@
 		A767753D17782E190085516D /* FSMyWeekReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752B17782E190085516D /* FSMyWeekReportView.m */; };
 		A767754017782E190085516D /* FSRequirementsManagementView.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752F17782E190085516D /* FSRequirementsManagementView.m */; };
 		A767754117782E190085516D /* FSRequirementsManagementView.m in Sources */ = {isa = PBXBuildFile; fileRef = A767752F17782E190085516D /* FSRequirementsManagementView.m */; };
+		A78BB157185EED480074DE94 /* open最新项目名称.xml in Resources */ = {isa = PBXBuildFile; fileRef = A78BB156185EED480074DE94 /* open最新项目名称.xml */; };
 		A7ACBCE7178E63CF00CCC990 /* logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = A7ACBCE6178E63CF00CCC990 /* logo.icns */; };
 		A7F3B6A5177D28D00010EC90 /* AutoCleanMemory.app in Resources */ = {isa = PBXBuildFile; fileRef = A7F3B6A4177D28D00010EC90 /* AutoCleanMemory.app */; };
 		A7F3B6AC177D2E320010EC90 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F3B6AB177D2E320010EC90 /* ServiceManagement.framework */; };
@@ -93,7 +92,6 @@
 		A71763E617782C0000594863 /* WeekReportSystemForMacTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeekReportSystemForMacTests.h; sourceTree = "<group>"; };
 		A71763E717782C0000594863 /* WeekReportSystemForMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeekReportSystemForMacTests.m; sourceTree = "<group>"; };
 		A71E1A0B17783A6400CB4769 /* BusinessLogic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BusinessLogic.xcodeproj; path = ../BusinessLogic/BusinessLogic.xcodeproj; sourceTree = "<group>"; };
-		A767751517782D450085516D /* project.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = project.xml; path = ../../CommonResources/project.xml; sourceTree = "<group>"; };
 		A767751617782D450085516D /* WeekReport.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = WeekReport.sqlite; path = ../../CommonResources/WeekReport.sqlite; sourceTree = "<group>"; };
 		A767751B17782D7E0085516D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		A767751D17782D830085516D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -116,6 +114,7 @@
 		A7756311177D1E10002BB17E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		A7756312177D1E11002BB17E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "zh-Hans"; path = "zh-Hans.lproj/Credits.rtf"; sourceTree = "<group>"; };
 		A7756313177D1E12002BB17E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A78BB156185EED480074DE94 /* open最新项目名称.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "open最新项目名称.xml"; path = "../../CommonResources/open最新项目名称.xml"; sourceTree = "<group>"; };
 		A7ACBCE6178E63CF00CCC990 /* logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = logo.icns; sourceTree = "<group>"; };
 		A7F3B6A4177D28D00010EC90 /* AutoCleanMemory.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = AutoCleanMemory.app; path = ../../CommonResources/AutoCleanMemory.app; sourceTree = "<group>"; };
 		A7F3B6AB177D2E320010EC90 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
@@ -268,8 +267,8 @@
 		A767754317782E4E0085516D /* Common Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A78BB156185EED480074DE94 /* open最新项目名称.xml */,
 				A7F3B6A4177D28D00010EC90 /* AutoCleanMemory.app */,
-				A767751517782D450085516D /* project.xml */,
 				A767751617782D450085516D /* WeekReport.sqlite */,
 			);
 			name = "Common Resource";
@@ -375,7 +374,7 @@
 				A71763C817782C0000594863 /* InfoPlist.strings in Resources */,
 				A71763CE17782C0000594863 /* Credits.rtf in Resources */,
 				A71763D417782C0000594863 /* MainMenu.xib in Resources */,
-				A767751717782D450085516D /* project.xml in Resources */,
+				A78BB157185EED480074DE94 /* open最新项目名称.xml in Resources */,
 				A767751917782D450085516D /* WeekReport.sqlite in Resources */,
 				A767753417782E190085516D /* FSDatePickerViewController.xib in Resources */,
 				A7F3B6A5177D28D00010EC90 /* AutoCleanMemory.app in Resources */,
@@ -388,7 +387,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A71763E517782C0000594863 /* InfoPlist.strings in Resources */,
-				A767751817782D450085516D /* project.xml in Resources */,
 				A767751A17782D450085516D /* WeekReport.sqlite in Resources */,
 				A767753517782E190085516D /* FSDatePickerViewController.xib in Resources */,
 			);

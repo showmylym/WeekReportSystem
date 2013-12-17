@@ -17,7 +17,7 @@
 - (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag {
     self = [super initWithContentRect:contentRect styleMask:aStyle backing:bufferingType defer:flag];
     if (self) {
-        [self addNotificationObserver];
+        [self loadingOperations];
     }
     return self;
 }
@@ -25,7 +25,7 @@
 - (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag screen:(NSScreen *)screen {
     self = [super initWithContentRect:contentRect styleMask:aStyle backing:bufferingType defer:flag screen:screen];
     if (self) {
-        [self addNotificationObserver];
+        [self loadingOperations];
     }
     return self;
 }
@@ -34,12 +34,18 @@
     [[NSNotificationCenter defaultCenter] removeObject:self];
 }
 
+
+#pragma mark - Private
+
+- (void)loadingOperations {
+    [self addNotificationObserver];
+}
+
 - (void) addNotificationObserver {
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(errorOccured:)
                                                  name:ErrorOccuredNotification
                                                object:nil];
-
 }
 
 #pragma mark - TabView Delegate
