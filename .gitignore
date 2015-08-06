@@ -1,0 +1,17 @@
+
+*.xccheckout
+
+*.xcscheme
+
+*.xcuserstate
+
+*.xccheckout
+
+BusinessLogic/BusinessLogic.xcodeproj/xcuserdata/jerrylei.xcuserdatad/xcschemes/xcschememanagement.plist
+
+*.xccheckout
+
+WeekReportSystemForMac/WeekReportSystemForMac.xcodeproj/xcuserdata/jerrylei.xcuserdatad/xcschemes/xcschememanagement.plist
+
+WeekReportSystemForMac/WeekReportSystemForMac.xcodeproj/project.xcworkspace/xcshareddata/WeekReportSystemForMac.xccheckout
+
