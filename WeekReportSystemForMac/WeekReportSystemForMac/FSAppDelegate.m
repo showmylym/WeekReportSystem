@@ -9,7 +9,6 @@
 #import "FSAppDelegate.h"
 #import <FSMainLogic.h>
 #import "FSAppSettingsView.h"
-#import <LaunchAtLoginController.h>
 
 static NSString * kLastVersion = @"LastVersion";
 
@@ -36,29 +35,7 @@ static NSString * kLastVersion = @"LastVersion";
     NSString * thisVersion = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"];
     if (lastVersion == nil || (lastVersion != nil && ![lastVersion isEqualToString:thisVersion])) {
         [userDefaults setValue:thisVersion forKey:kLastVersion];
-        LaunchAtLoginController * launchAtLoginController = [[LaunchAtLoginController alloc] init];
-        //remove all old week report app items
-        [launchAtLoginController removeAllWeekReportItems];
-        //terminate old apps        
-        NSArray * arrayRunningApps = [[NSWorkspace sharedWorkspace] runningApplications];
-        for (NSRunningApplication * runningApp in arrayRunningApps) {
-            if ([runningApp.bundleIdentifier isEqualToString:AutoCleanMemoryIdentifier]) {
-                [runningApp terminate];
-            }
-        }
-        
-        [[NSRunLoop mainRunLoop] runUntilDate:[[NSDate date] dateByAddingTimeInterval:0.5]];
-        //set new settings
-        NSString * autoCleanMemoryAppPath = [[NSBundle mainBundle] pathForResource:@"AutoCleanMemory" ofType:@"app"];
-        NSURL * autoCleanMemoryAppURL = [[NSURL alloc] initFileURLWithPath:autoCleanMemoryAppPath isDirectory:YES];
-        [[NSWorkspace sharedWorkspace] launchApplication:autoCleanMemoryAppPath];
-        [launchAtLoginController setLaunchAtLogin:YES forURL:autoCleanMemoryAppURL];
-        [userDefaults setBool:YES forKey:kAutoRunMemoryClean];
-        
-        NSURL * weekReportAppURL = [[NSBundle mainBundle] bundleURL];
-        [launchAtLoginController setLaunchAtLogin:YES forURL:weekReportAppURL];
-        [userDefaults setBool:YES forKey:kAutoRunWeekReport];
-        [userDefaults synchronize];
+       
     }
     
     self.window.title = [NSString stringWithFormat:@"四方精创周报系统%@", thisVersion];
