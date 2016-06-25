@@ -15,3 +15,7 @@ WeekReportSystemForMac/WeekReportSystemForMac.xcodeproj/xcuserdata/jerrylei.xcus
 
 WeekReportSystemForMac/WeekReportSystemForMac.xcodeproj/project.xcworkspace/xcshareddata/WeekReportSystemForMac.xccheckout
 
+
+*.xcscheme
+
+*.xcworkspacedata
